@@ -3,6 +3,8 @@
 
 namespace ffi {
     namespace item {
+        typedef unsigned int price;
+
         class item {
             public:
                 explicit item() = delete;
@@ -15,7 +17,7 @@ namespace ffi {
             protected:
                 std::string _name;
                 std::string _description;
-                ffi::price _price;
+                ffi::item::price _value;
         };
 
         class head : public item {
