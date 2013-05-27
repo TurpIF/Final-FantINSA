@@ -12,8 +12,13 @@ namespace ffi {
             virtual ~character();
 
         protected:
+            // Identity
             std::string _name;
+
+            // Stats
             ffi::stats & _stats;
+
+            // Objects
             ffi::equipment & _equip;
             ffi::inventory & _inventory;
     };
